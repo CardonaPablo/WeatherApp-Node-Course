@@ -6,6 +6,8 @@ const geocode = require('./utils/geocode');
 // Variable que almacena la aplicación de express
 const app = express()
 
+const port = process.env.PORT || 3000
+
 //Obtenemos las rutas a las carpetas necesarias
 //__dirname nos regresa el path del directorio actual
 const viewsPath = path.join(__dirname, "../templates/views")
@@ -104,6 +106,6 @@ app.get('*' , (request, response) => {
 })
 
 // Inicia la app de express en el puerto 3000
-app.listen(3000, () => {
-    console.log("Server listening on http://localhost:3000")
+app.listen(port, () => {
+    console.log("Server listening on port " + port)
 });

@@ -6,7 +6,7 @@ weatherForm.addEventListener("submit", (e)=>{
     e.preventDefault();
 
     const location = search.value
-    fetch("http://localhost:3000/weather?address=" + encodeURI(location))
+    fetch("/weather?address=" + encodeURI(location))
         .then((response) => {
             document.getElementById("error-message").innerHTML = "";
             document.getElementById("weather-icon").src = "";
