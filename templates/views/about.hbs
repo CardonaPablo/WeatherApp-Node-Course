@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+
+</head>
+<body>
+    {{>header}}
+    <div class="container">
+        <div class="row">
+            <div class="col-auto">
+                <img src="./img/robot.png" alt="Robot image" id="me-img">
+            </div>
+            <div class="col-auto">
+                <p> Created by {{name}}</p>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>

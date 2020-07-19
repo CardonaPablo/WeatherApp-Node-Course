@@ -1,0 +1,18 @@
+h1 {
+    color: gray;
+}
+
+#me-img {
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.main-content {
+    height: fit-content;
+    min-height: 75vh;
+}
